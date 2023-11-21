@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "c2d60ad7-c437-4a72-b0ee-90510376fdf3",
+		"name": "NBA_S5",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30373156"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/equipes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/equipes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"equipes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/equipes/1/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/equipes/1/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"equipes",
+						"1",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/saisons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/saisons",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"saisons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/matchstats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/matchstats",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"matchstats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/matchstats",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_joueur\": 1,\n    \"id_match\": 1,\n    \"ppm\": 25.5,\n    \"rpm\": 8.0,\n    \"pdpm\": 2.0,\n    \"mpm\": 35.0,\n    \"eff\": 29.0,\n    \"fg\": 10.0,\n    \"threep\": 3.0,\n    \"lf\": 6.0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/matchstats",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"matchstats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/matchstats/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"idStatistique\": 1,\n    \"id_joueur\": 1,\n    \"id_match\": 1,\n    \"ppm\": 30.5,\n    \"rpm\": 4.0,\n    \"pdpm\": 7.0,\n    \"mpm\": 35.0,\n    \"eff\": 40.0,\n    \"fg\": 10.0,\n    \"threep\": 3.0,\n    \"lf\": 8.0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/matchstats/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"matchstats",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
